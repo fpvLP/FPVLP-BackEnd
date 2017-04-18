@@ -3,7 +3,7 @@
     <div class="panel panel-success">
       <div class="panel-body">
         <div ng-if="todos.length == 0" class="alert alert-info" role="alert"> You currently do not have any
-          todos associated with your account. Click <strong>New To-Do</strong> to add one.
+          Landing Page Project associated with your account. Click <strong>New Project</strong> to add one.
         </div>
         <table ng-if="todos.length > 0" class="table table-striped">
           <thead>
@@ -34,7 +34,7 @@
         <bgf-pagination collection="todos" url="todosUrl" per-page="5" template-url="./views/pager.html"></bgf-pagination>
       </div>
       <div class="panel-footer"><a ui-sref="todoCreate()" class="btn btn-primary">
-        <i class="glyphicon glyphicon-plus"></i> New To-Do</a>
+        <i class="glyphicon glyphicon-plus"></i> New Landing Page</a>
       </div>
     </div>
   </div>
