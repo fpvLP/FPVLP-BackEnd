@@ -7,7 +7,6 @@
 'use strict';
 
 var gulp = require('gulp');
-var deploy = require('gulp-deploy-git');
 var wrench = require('wrench');
 
 /**
@@ -27,11 +26,4 @@ wrench.readdirSyncRecursive('./gulp').filter(function(file) {
  */
 gulp.task('default', ['clean'], function () {
   gulp.start('build');
-});
-
-gulp.task('deploy', function() {
-  return gulp.src('dist/**/*')
-    .pipe(deploy({
-      repository: 'https://github.com/fpvLP/FPVLP-BackEnd/tree/gh-pages'
-    }));
 });
