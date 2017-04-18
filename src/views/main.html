@@ -17,7 +17,7 @@
           </thead>
           <tbody>
             <tr data-ng-repeat="todo in todos" ng-class="getStatus(todo)">
-              <td><a ui-sref="todo.view({todoId: todo._id})">{{ todo.data.title }}</a></td>
+              <td><a ui-sref="todo.view({todoId: todo._id})">{{ todo.data.fullName }}</a></td>
               <td><span ng-if="!todo.data.status">Not Started</span><span ng-if="todo.data.status">{{ todo.data.status }}</span></td>
               <td>{{ todo.modified | amDateFormat:'MMMM Do YYYY, h:mm:ss a' }}</td>
               <td>{{ todo.created | amDateFormat:'MMMM Do YYYY, h:mm:ss a' }}</td>
