@@ -18,6 +18,7 @@
     "gulp-angular-filesort": "~1.1.1",
     "gulp-angular-templatecache": "~1.6.0",
     "gulp-autoprefixer": "~2.3.1",
+    "gulp-clean": "^0.3.2",
     "gulp-csso": "~1.0.0",
     "gulp-deploy-git": "^0.5.3",
     "gulp-filter": "~2.0.2",
