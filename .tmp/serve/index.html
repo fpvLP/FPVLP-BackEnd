@@ -25,13 +25,21 @@
 
     <!-- build:css({.tmp/serve,src}) styles/vendor.css -->
     <!-- bower:css -->
-    <!-- run `gulp inject` to automatically populate bower styles dependencies -->
+    <link rel="stylesheet" href="../bower_components/animate.css/animate.css" />
+    <link rel="stylesheet" href="../bower_components/angular-ui-select/dist/select.css" />
+    <link rel="stylesheet" href="../bower_components/ng-formio/css/formio.css" />
+    <link rel="stylesheet" href="../bower_components/angular-ui-grid/ui-grid.css" />
+    <link rel="stylesheet" href="../bower_components/angular-ui-grid/ui-grid.min.css" />
+    <link rel="stylesheet" href="../bower_components/ng-dialog/css/ngDialog.css" />
+    <link rel="stylesheet" href="../bower_components/ng-dialog/css/ngDialog-theme-default.css" />
+    <link rel="stylesheet" href="../bower_components/ng-tags-input/ng-tags-input.css" />
+    <link rel="stylesheet" href="../bower_components/ng-formio-builder/css/ngFormBuilder.css" />
     <!-- endbower -->
     <!-- endbuild -->
 
     <!-- build:css({.tmp/serve,src}) styles/app.css -->
     <!-- inject:css -->
-    <!-- css files will be automatically insert here -->
+    <link rel="stylesheet" href="app/index.css">
     <!-- endinject -->
     <!-- endbuild -->
   </head>
@@ -74,13 +82,45 @@
 
     <!-- build:js(src) scripts/vendor.js -->
     <!-- bower:js -->
-    <!-- run `gulp inject` to automatically populate bower script dependencies -->
+    <script src="../bower_components/jquery/dist/jquery.js"></script>
+    <script src="../bower_components/angular/angular.js"></script>
+    <script src="../bower_components/angular-sanitize/angular-sanitize.js"></script>
+    <script src="../bower_components/angular-ui-router/release/angular-ui-router.js"></script>
+    <script src="../bower_components/angular-bootstrap/ui-bootstrap-tpls.js"></script>
+    <script src="../bower_components/moment/moment.js"></script>
+    <script src="../bower_components/ngmap/build/scripts/ng-map.js"></script>
+    <script src="../bower_components/bootstrap-sass/assets/javascripts/bootstrap.js"></script>
+    <script src="../bower_components/angular-paginate-anything/dist/paginate-anything-tpls.js"></script>
+    <script src="../bower_components/lodash/lodash.js"></script>
+    <script src="../bower_components/ng-file-upload/ng-file-upload.js"></script>
+    <script src="../bower_components/angular-moment/angular-moment.js"></script>
+    <script src="../bower_components/bootstrap/dist/js/bootstrap.js"></script>
+    <script src="../bower_components/bootstrap-ui-datetime-picker/dist/datetime-picker.js"></script>
+    <script src="../bower_components/angular-ui-mask/dist/mask.js"></script>
+    <script src="../bower_components/blob-polyfill/Blob.js"></script>
+    <script src="../bower_components/file-saver.js/FileSaver.js"></script>
+    <script src="../bower_components/angular-file-saver/dist/angular-file-saver.bundle.js"></script>
+    <script src="../bower_components/angular-ui-select/dist/select.js"></script>
+    <script src="../bower_components/ng-formio/dist/formio.js"></script>
+    <script src="../bower_components/angular-ui-grid/ui-grid.js"></script>
+    <script src="../bower_components/angular-ui-grid/ui-grid.min.js"></script>
+    <script src="../bower_components/ng-formio-grid/dist/ng-formio-grid.js"></script>
+    <script src="../bower_components/angular-drag-and-drop-lists/angular-drag-and-drop-lists.js"></script>
+    <script src="../bower_components/ng-dialog/js/ngDialog.js"></script>
+    <script src="../bower_components/ng-tags-input/ng-tags-input.js"></script>
+    <script src="../bower_components/angular-ckeditor/angular-ckeditor.js"></script>
+    <script src="../bower_components/ng-formio-builder/dist/ngFormBuilder.js"></script>
+    <script src="../bower_components/ng-formio-helper/dist/ng-formio-helper.js"></script>
+    <script src="../bower_components/ng-formio-helper/dist/ng-formio-builder.js"></script>
     <!-- endbower -->
     <!-- endbuild -->
 
     <!-- build:js({.tmp/serve,.tmp/partials,src}) scripts/app.js -->
     <!-- inject:js -->
-    <!-- js files will be automatically insert here -->
+    <script src="app/index.module.js"></script>
+    <script src="app/index.run.js"></script>
+    <script src="app/index.route.js"></script>
+    <script src="app/index.constants.js"></script>
     <!-- endinject -->
 
     <!-- inject:partials -->
