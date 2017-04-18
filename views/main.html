@@ -8,19 +8,19 @@
         <table ng-if="todos.length > 0" class="table table-striped">
           <thead>
             <tr>
-              <th>Title</th>
+              <th>User</th>
               <th>Status</th>
-              <th>Modified</th>
-              <th>Created</th>
+              <!-- <th>Modified</th>
+              <th>Created</th> -->
               <th>Operations</th>
             </tr>
           </thead>
           <tbody>
             <tr data-ng-repeat="todo in todos" ng-class="getStatus(todo)">
-              <td><a ui-sref="todo.view({todoId: todo._id})">{{ todo.data.title }}</a></td>
-              <td><span ng-if="!todo.data.status">Not Started</span><span ng-if="todo.data.status">{{ todo.data.status }}</span></td>
-              <td>{{ todo.modified | amDateFormat:'MMMM Do YYYY, h:mm:ss a' }}</td>
-              <td>{{ todo.created | amDateFormat:'MMMM Do YYYY, h:mm:ss a' }}</td>
+              <td><a ui-sref="todo.view({todoId: todo._id})">{{ todo.data.fullName }}</a></td>
+              <td><span ng-if="todo.data.projectStatus">{{ todo.data.projectStatus }}</span></td>
+              <!-- <td>{{ todo.modified | amDateFormat:'MMMM Do YYYY, h:mm:ss a' }}</td>
+              <td>{{ todo.created | amDateFormat:'MMMM Do YYYY, h:mm:ss a' }}</td> -->
               <td>
                 <div class="button-group" style="display:flex;">
                   <a ui-sref="todo.view({todoId: todo._id})" class="btn btn-primary btn-xs"><span class="glyphicon glyphicon-eye-open"></span></a>&nbsp;
